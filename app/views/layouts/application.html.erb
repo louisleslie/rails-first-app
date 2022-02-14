@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <div style="width: 100vw; background-color: grey; padding: 1rem;">
+      <h2><%= link_to "Batch 806", home_path %></h2>
+      <%= link_to "About Us", about_path %>
+      <%= link_to "Contact Us", contact_path %>
+    </div>
     <%= yield %>
+    <p>This is a footer. It is <%= Time.now %></p>
   </body>
 </html>
